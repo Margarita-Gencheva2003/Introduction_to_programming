@@ -1,17 +1,20 @@
-//#include <iostream>
-//
-//int main() {
-//	int a = 0, b = 0;
-//	std::cout << "First number: ";
-//	std::cin >> a;
-//	std::cout << "\nSecond number: ";
-//	std::cin >> b;
-//	if (a != b) {
-//		int max = (a < b) ? b : a;
-//		std::cout << "Max: " << max << std::endl;
-//	}
-//	else {
-//		std::cout << "firstNum = secNum "<< std::endl;
-//	}
-//	return 0;
-//}
+#include <iostream>
+
+int main() {
+	double number1 = 0, number2 = 0;
+
+	std::cout << "Enter first number value: ";
+	std::cin >> number1;
+	std::cout << "Enter second number value: ";
+	std::cin >> number2;
+
+	if (number1 == number2) {
+		std::cout << "Both numbers are equal." << std::endl;
+		return 0;
+	}
+
+	std::cout << (number1 > number2 ? "The first number is larger than the second number." : "The second number is larger than the first number.") << std::endl;
+
+	return 0;
+}
+

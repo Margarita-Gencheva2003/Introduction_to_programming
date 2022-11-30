@@ -1,14 +1,16 @@
-//#include <iostream>
-//
-//int main() {
-//	int year = 0;
-//	std::cout << "Input year: ";
-//	std::cin >> year;
-//	if (year % 4 == 0) {
-//		std::cout << "It is leap year." << std::endl;
-//	}
-//	else {
-//		std::cout << "It is  not leap year." << std::endl;
-//	}
-//	return 0;
-//}
+#include <iostream>
+
+int main() {
+	int year = 0;
+
+	std::cout << "Enter a year: ";
+	std::cin >> year;
+
+	if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+		std::cout << "Entered year is leap.\n";
+	} else {
+		std::cout << "Entered year is not leap.\n";
+	}
+
+	return 0;
+}
